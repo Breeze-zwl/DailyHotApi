@@ -1,10 +1,3 @@
-/*
- * @author: WangPeng
- * @date: 2023-07-10 16:56:01
- * @customEditors: imsyy
- * @lastEditTime: 2023-07-11 16:54:38
- */
-
 const Router = require("koa-router");
 const douyinNewRouter = new Router();
 const axios = require("axios");

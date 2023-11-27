@@ -1,10 +1,3 @@
-/*
- * @author: MyFaith
- * @date: 2023-09-06
- * @customEditors: imsyy
- * @lastEditTime: 2023-09-06
- */
-
 const Router = require("koa-router");
 const doubanNewRouter = new Router();
 const axios = require("axios");
