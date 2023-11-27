@@ -6,7 +6,7 @@ const { get, set, del } = require("../utils/cacheData");
 // 接口信息
 const routerInfo = {
   name: "douyin",
-  title: "抖音",
+  title: "抖音热歌榜",
   subtitle: "热歌榜",
 };
 
