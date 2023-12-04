@@ -25,7 +25,7 @@ const getData = (data) => {
       console.log($(".news-itme .title"));
       dataList.push({
         title: $(".news-itme .title").text(),
-        desc: $(".news-itme .title").text(),
+        // desc: $(".news-itme .title").text(),
         url: `https://www.yjwujian.cn/news/official/${id}${dateId}`,
         mobileUrl: `https://www.yjwujian.cn/news/official/${id}${dateId}`,
       })
