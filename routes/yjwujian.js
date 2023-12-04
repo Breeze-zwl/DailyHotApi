@@ -22,15 +22,15 @@ const getData = (data) => {
     $(".news-itme").map((idx, item) => {
       const dateId = $(item).attr("href").split("/").at(-2) ?? "";
       const id =  '/' + $(item).attr("href").split("/").at(-1) ?? "";
+      const isNew =  '/' + $(item).attr("href").split("/").at(-3) ?? "";
       console.log($(".title")[idx].children[0].data);
       dataList.push({
         title: $(".title")[idx].children[0].data,
         // desc: $(".title")[idx].children[0].data,
-        url: `https://www.yjwujian.cn/news/update/${dateId}${id}`,
-        mobileUrl: `https://www.yjwujian.cn/news/update/${dateId}${id}`,
+        url: `https://www.yjwujian.cn/news${isNew}/${dateId}${id}`,
+        mobileUrl: `https://www.yjwujian.cn/news${isNew}/${dateId}${id}`,
       })
     })
-    // return $(".news-itme .title")
     return dataList;
   } catch (error) {
     console.error("数据处理出错" + error);
