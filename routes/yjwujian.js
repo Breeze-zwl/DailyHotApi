@@ -26,8 +26,8 @@ const getData = (data) => {
       dataList.push({
         title: $(".title")[idx].children[0].data,
         // desc: $(".title")[idx].children[0].data,
-        url: `https://www.yjwujian.cn/news/official/${dateId}${id}`,
-        mobileUrl: `https://www.yjwujian.cn/news/official/${dateId}${id}`,
+        url: `https://www.yjwujian.cn/news/update/${dateId}${id}`,
+        mobileUrl: `https://www.yjwujian.cn/news/update/${dateId}${id}`,
       })
     })
     // return $(".news-itme .title")
