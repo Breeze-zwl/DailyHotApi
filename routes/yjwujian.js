@@ -22,10 +22,10 @@ const getData = (data) => {
     $(".news-itme").map((idx, item) => {
       const dateId = $(item).attr("href").split("/").at(-2) ?? "";
       const id =  '/' + $(item).attr("href").split("/").at(-1) ?? "";
-      console.log($(".news-itme .title"));
+      console.log($(".title")[idx].children[0].data);
       dataList.push({
-        title: $(".news-itme .title").text(),
-        // desc: $(".news-itme .title").text(),
+        title: $(".title")[idx].children[0].data,
+        // desc: $(".title")[idx].children[0].data,
         url: `https://www.yjwujian.cn/news/official/${id}${dateId}`,
         mobileUrl: `https://www.yjwujian.cn/news/official/${id}${dateId}`,
       })
