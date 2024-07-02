@@ -55,7 +55,7 @@ yjwujianRouter.get("/yjwujian", async (ctx) => {
       if (!data) {
         ctx.body = {
           code: 500,
-          title: "永杰无间",
+          title: "永劫无间",
           subtitle: "更新公告",
           message: "获取失败",
         };
@@ -67,7 +67,7 @@ yjwujianRouter.get("/yjwujian", async (ctx) => {
     ctx.body = {
       code: 200,
       message: "获取成功",
-      title: "永杰无间",
+      title: "永劫无间",
       subtitle: "更新公告",
       from,
       total: data.length,
@@ -97,7 +97,7 @@ yjwujianRouter.get("/yjwujian/new", async (ctx) => {
     ctx.body = {
       code: 200,
       message: "获取成功",
-      title: "永杰无间",
+      title: "永劫无间",
       subtitle: "更新公告",
       total: newData.length,
       updateTime,
@@ -116,7 +116,7 @@ yjwujianRouter.get("/yjwujian/new", async (ctx) => {
       ctx.body = {
         code: 200,
         message: "获取成功",
-        title: "永杰无间",
+        title: "永劫无间",
         subtitle: "更新公告",
         total: cachedData.length,
         updateTime,
@@ -126,7 +126,7 @@ yjwujianRouter.get("/yjwujian/new", async (ctx) => {
       // 如果缓存中也没有数据，则返回错误信息
       ctx.body = {
         code: 500,
-        title: "永杰无间",
+        title: "永劫无间",
         subtitle: "更新公告",
         message: "获取失败",
       };
